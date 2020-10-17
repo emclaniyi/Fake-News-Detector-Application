@@ -6,6 +6,22 @@
 </head>
 <body>
 <h2>Fake News Detector Using Machine Learning</h2>
+<div class="ml-container">
+    <form action="{{ url_for('predict')}}" method="POST">
+        <label for="url"> URL:</label>
+        <input type="text" id="url" name="url"/><br>
+
+        <label for="title"> TITLE:</label>
+        <input type="text" id="title" name="title"/><br>
+
+        <label for="comment"> NEWS TEXT:</label>
+        <P>Enter Text Here</P>
+        <textarea id="comment" name="comment"></textarea><br>
+
+        <input type="submit" class="btn-info" value="predict">
+
+    </form>
+</div>
 
 </body>
 </html>
